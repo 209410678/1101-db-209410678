@@ -84,3 +84,17 @@ pool.query('SELECT * from category_78', (err, res) => {
 module.exports = pool;
 ```
 ---
+
+![](https://i.imgur.com/lNodjSV.jpg)
+
+---
+
+![](https://i.imgur.com/wHFcR6g.png)
+
+```
+host: ec2-34-205-14-168.compute-1.amazonaws.com
+port: 5432
+database: dcij0u0ds4gqls
+username: iejnaoohbcfwlb
+password: ef44fd429dd371d22eaddb8cd641d967ed152e5b561d0d4c32ceb8af45b8b883
+```
