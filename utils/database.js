@@ -21,9 +21,9 @@ if (isProduction) {
 }
 
 
-//pool.query('SELECT * from category_78', (err, res) => {
-//    console.log(JSON.stringify(res.rows));
-//    pool.end();
-//})
-
+/*pool.query('SELECT * from category_78', (err, res) => {
+    console.log(JSON.stringify(res.rows));
+    pool.end();
+})
+*/
 module.exports = pool;
