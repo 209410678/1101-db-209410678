@@ -3,6 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+const cors = require('cors');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -21,12 +22,17 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(
+  cors({
+    origin: ['https://heroku-crown-78.herokuapp.com/api_78/category_78'],
+  })
+);
 
 app.use('/', indexRouter);
 app.use('/crown_78', crown_78_Router);
 app.use('/crown2_78', crown2_78_Router);
 app.use('/users', usersRouter);
-app.use('/api_78',api_78_Router);
+app.use('/api_78',cors(),api_78_Router);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
