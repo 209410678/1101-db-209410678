@@ -3,13 +3,12 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-const cors = require('cors');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-const crown_78_Router = require('./routes/crown_78');
-const crown2_78_Router = require('./routes/crown2_78');
-const api_78_Router = require('./routes/api_78');
+const crown_xx_Router = require('./routes/crown_xx');
+const crown2_xx_Router = require('./routes/crown2_xx');
+const api_xx_Router = require('./routes/api_xx');
 
 var app = express();
 
@@ -22,25 +21,20 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(
-  cors({
-    origin: ['https://heroku-crown-78.herokuapp.com/api_78/category_78'],
-  })
-);
 
 app.use('/', indexRouter);
-app.use('/crown_78', crown_78_Router);
-app.use('/crown2_78', crown2_78_Router);
 app.use('/users', usersRouter);
-app.use('/api_78',cors(),api_78_Router);
+app.use('/crown_xx', crown_xx_Router);
+app.use('/crown2_xx', crown2_xx_Router);
+app.use('/api_xx', api_xx_Router);
 
 // catch 404 and forward to error handler
-app.use(function (req, res, next) {
+app.use(function(req, res, next) {
   next(createError(404));
 });
 
 // error handler
-app.use(function (err, req, res, next) {
+app.use(function(err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
