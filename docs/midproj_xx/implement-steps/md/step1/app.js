@@ -12,7 +12,7 @@ const api_xx_Router = require('./routes/api_xx');
 
 /* midproj_xx */
 
-const theme_78_Router = require('./routes/midproj_78');
+const midproj_78_Router = require('./routes/midproj_78');
 
 /* finalproj_xx */
 
@@ -36,7 +36,7 @@ app.use('/api_xx', api_xx_Router);
 
 /* midproj_xx */
 
-app.use('/theme_78', theme_78_Router);
+app.use('/midproj_78', midproj_78_Router);
 
 /* finalproj_xx */
 

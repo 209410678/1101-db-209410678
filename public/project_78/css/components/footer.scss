@@ -1,0 +1,215 @@
+@charset "gb2312";
+
+body,
+dd,
+div,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+img,
+input,
+li,
+ol,
+p,
+select,
+table,
+td,
+th,
+ul {
+    margin: auto;
+    padding: 0;
+}
+
+body {
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    color: #888;
+    font-weight: 400;
+    font-size: 15px;
+    font-family: "PingFang SC Regular", "PingFang SC", PingFang, "Droid Sans", "Droid Sans Fallback", Arial, "Helvetica Neue", Roboto, "Heiti SC", sans-self;
+    line-height: 150%;
+}
+
+a {
+    color: #034b5f;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f50;
+}
+
+.container,
+.footer p,
+.container01 {
+    width: 90%;
+    max-width: 75pc;
+}
+
+.footer a {
+    color: #fff;
+}
+
+.footer a:hover {
+    color: #ff0000;
+}
+
+.clear {
+    clear: both;
+}
+
+.hidden-xs {
+    display: block !important;
+}
+
+.visible-xs {
+    display: none !important;
+}
+
+@media (max-width:767px) {
+    .container {
+        width: 100%;
+    }
+
+    .container01,
+    .footer p {
+        width: 95%;
+    }
+
+    .hidden-xs {
+        display: none !important;
+    }
+
+    .visible-xs {
+        display: block !important;
+    }
+
+    .header {
+        height: 75pt;
+    }
+
+    .header .header-right {
+        float: right;
+        width: auto;
+    }
+
+    .header .header-nav {
+        clear: both;
+        width: 100%;
+        border-top: 1px solid #e9faff;
+    }
+
+    .header .header-nav a {
+        float: left;
+        width: 20%;
+        text-align: center;
+    }
+
+    #fengtui .item,
+    .content-left,
+    .content-right {
+        clear: both;
+        width: 100%;
+    }
+
+    #gengxin ul li .s3,
+    #gengxin ul li .s4 {
+        display: none;
+        width: 0;
+    }
+
+    .class ul li {
+        width: 33.333333%;
+    }
+
+    .bookintro {
+        height: 90pt;
+    }
+
+    .thumbnail {
+        width: 5pc;
+        height: 110px;
+    }
+
+    .chapterlist dd {
+        width: 100%;
+    }
+
+    .read .readcontent,
+    .read .reedcontent,
+    .read .readcotent,
+    .read .readc0ntent {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .read .booktag a {
+        margin: 2px 0;
+        padding: 3px 0;
+        width: 30%;
+    }
+
+    #linkIndex,
+    #linkPrev {
+        width: 46%;
+    }
+
+    #linkNext {
+        margin: 10px 0;
+        width: 94%;
+    }
+
+    .row {
+        float: left;
+        margin: 0 1%;
+        width: 47%;
+    }
+
+    .tuijian a {
+        float: left;
+        margin: 5px 0 0;
+        padding: 2px 0;
+        width: 100%;
+        border-top: 1px dashed #ccc;
+    }
+
+    .bookbox {
+        width: 98%;
+    }
+}
+
+@media (max-width:347px) {
+
+    .container,
+    .footer p {
+        width: 100%;
+    }
+}
+
+.g-dialog-container .dialog-window .dialog-body {
+    font-size: 14px;
+    line-height: 30px;
+    margin-top: .5em;
+    text-align: center;
+    color: #999;
+}
+
+.g-dialog-container .dialog-window .dialog-footer {
+    padding: 2em 1em 0;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+}
+
