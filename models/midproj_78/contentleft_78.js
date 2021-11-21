@@ -33,10 +33,10 @@ const contentleft_78 = class contentleft_78 {
   }
 };
 
-const test = async () => {
+/*const test = async () => {
   let results = await contentleft_78.fetchAll();
   console.log('results', JSON.stringify(results.rows));
 };
 
-test();
+test();*/
 module.exports = contentleft_78;

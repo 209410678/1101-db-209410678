@@ -9,22 +9,24 @@ exports.getCategories = async (req, res) => {
   }
 };
 
-exports.getShop = async (req,res) => {
+exports.getShop = async (req, res) => {
   try {
     const data = await serviceCrown2Controller_xx.getShop();
     return res.json(data);
-  }catch(err) {
+  } catch (err) {
     res.status(404).json(err);
   }
-}
+};
 
-exports.getProductsByCategory = async (req,res) => {
-  console.log('category',req.params.category)
+exports.getProductsByCategory = async (req, res) => {
+  console.log('category', req.params.category);
   try {
-    const data = await serviceCrown2Controller_xx.getProductsByCategory(req.params.category);
+    const data = await serviceCrown2Controller_xx.getProductsByCategory(
+      req.params.category
+    );
     //console.log('getProductsByCategory',JSON.stringify(data));
     return res.json(data);
-  }catch(err){
+  } catch (err) {
     res.status(404).json(err);
   }
-}
+};
