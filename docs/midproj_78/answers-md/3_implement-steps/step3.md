@@ -23,6 +23,4 @@
 網頁結果可運行
 ![](https://i.imgur.com/eEkY3cQ.png)
 
----
-heroku目前可呈現畫面
-![](https://i.imgur.com/38EjOCk.png)
+
