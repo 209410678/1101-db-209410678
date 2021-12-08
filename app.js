@@ -6,9 +6,9 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-const crown_xx_Router = require('./routes/crown_xx');
-const crown2_xx_Router = require('./routes/crown2_xx');
-const api_xx_Router = require('./routes/api_xx');
+const crown_78_Router = require('./routes/crown_78');
+const crown2_78_Router = require('./routes/crown2_78');
+const api_78_Router = require('./routes/api_78');
 
 /* midproj_xx */
 
@@ -30,9 +30,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/crown_xx', crown_xx_Router);
-app.use('/crown2_xx', crown2_xx_Router);
-app.use('/api_xx', api_xx_Router);
+app.use('/crown_78', crown_78_Router);
+app.use('/crown2_78', crown2_78_Router);
+app.use('/api_78', api_78_Router);
 
 /* midproj_xx */
 

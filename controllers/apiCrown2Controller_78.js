@@ -1,8 +1,8 @@
-const serviceCrown2Controller_xx = require('./crown_xx/serviceCrown2Controller_xx');
+const serviceCrown2Controller_78 = require('./crown_78/serviceCrown2Controller_78');
 
 exports.getCategories = async (req, res) => {
   try {
-    const data = await serviceCrown2Controller_xx.getCategories();
+    const data = await serviceCrown2Controller_78.getCategories();
     return res.json(data);
   } catch (err) {
     console.log('crow2Controller getCategories', err);
@@ -11,7 +11,7 @@ exports.getCategories = async (req, res) => {
 
 exports.getShop = async (req, res) => {
   try {
-    const data = await serviceCrown2Controller_xx.getShop();
+    const data = await serviceCrown2Controller_78.getShop();
     return res.json(data);
   } catch (err) {
     res.status(404).json(err);
@@ -21,7 +21,7 @@ exports.getShop = async (req, res) => {
 exports.getProductsByCategory = async (req, res) => {
   console.log('category', req.params.category);
   try {
-    const data = await serviceCrown2Controller_xx.getProductsByCategory(
+    const data = await serviceCrown2Controller_78.getProductsByCategory(
       req.params.category
     );
     //console.log('getProductsByCategory',JSON.stringify(data));
