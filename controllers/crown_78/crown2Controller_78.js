@@ -68,3 +68,13 @@ exports.updateProducts = async(req,res) =>{
 
   }
 }
+
+exports.deleteProduct = async (req,rse) => {
+  console.log('deleteProduct',req.params.id);
+  try {
+    await serviceCrown2Controller_78.deleteById(req.params.id)
+    res.redirect('/crown2_78');
+  }catch(err){
+    console.log(err);
+  }
+}

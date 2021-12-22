@@ -10,9 +10,13 @@ const crown_78_Router = require('./routes/crown_78');
 const crown2_78_Router = require('./routes/crown2_78');
 const api_78_Router = require('./routes/api_78');
 
+const booksRouter = require('./routes/books_78');
+
 /* midproj_xx */
 
 const theme_78_Router = require('./routes/midproj_78');
+
+
 
 /* finalproj_xx */
 
@@ -37,6 +41,8 @@ app.use('/api_78', api_78_Router);
 /* midproj_xx */
 
 app.use('/theme_78', theme_78_Router);
+
+app.use('/books',booksRouter);
 
 /* finalproj_xx */
 

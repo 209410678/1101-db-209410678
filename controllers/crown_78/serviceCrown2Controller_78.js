@@ -47,3 +47,11 @@ exports.update = async (body) => {
     console.log('update',err);
   }
 };
+
+exports.deleteById = async (id) => {
+  try {
+    return await Shop_78.deleteById(id);
+  }catch(err){
+    console.log(err)
+  }
+}

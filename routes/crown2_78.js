@@ -11,5 +11,6 @@ router.get('/shop_78/:category',crown2Controller_78.getProductsByCategory);
 
 router.post('/update',crown2Controller_78.updateProducts);
 
+router.get('/delete/:id',crown2Controller_78.deleteProduct);
 
 module.exports = router;
